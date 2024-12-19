@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fceee5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #03acf4;
+            border: 1px solid #2601f3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #080808;
+        }
+
+        @media (max-width: 600px) {
+            .card-title {
+                font-size: 16px;
+            }
+
+            .card-description {
+                font-size: 13px;
+            }
+        }
+        .apply-btn {
+            background-color: #db5034;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .apply-btn:hover {
+            background-color: #b92929;}
+    </style>
+</head>
+<body><a href="home page.html"> <button class="apply-btn">BACK</button></a>
+    <div class="container">
+        <h1>Local Community Portal</h1>
+        <p>Explore the vibrant aspects of our local community through these images and descriptions.</p>
+        <div class="gallery">
+            <div class="card">
+                <img src="https://streamline.imgix.net/38f7b82a-aa05-4dfa-9cf5-cfd8c492b510/87d42e3b-38ac-4f7c-9a00-ffefd29669b1/community_events_banner.jpg?ixlib=rb-1.1.0&w=2000&h=2000&fit=max&or=0&s=1f9b68aa382c19eb32387f9596e1ff4c" alt="Community Event">
+                <div class="card-content">
+                    <h2 class="card-title">Community Event</h2>
+                    <p class="card-description">A glimpse of our latest community event bringing everyone together.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.ko1PzvE_UyVROZcUBMRhEgHaCH&pid=Api&P=0&h=180" alt="Local Market">
+                <div class="card-content">
+                    <h2 class="card-title">Local Market</h2>
+                    <p class="card-description">Discover the charm of our bustling local market with fresh produce and handicrafts.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://indigenousyukon.ca/assets/images/uploads/communities_cultural/_community_slider_scale/20190629_ADAweb2019_9744A.jpg" alt="Cultural Festival">
+                <div class="card-content">
+                    <h2 class="card-title">Cultural Festival</h2>
+                    <p class="card-description">Experience the vibrant traditions showcased in our cultural festivals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
